@@ -1,28 +1,53 @@
 # ProCon
-PS4 homebrew plugin for using a Nintendo Switch Pro Controller via USB on modded PS4.
+
+Universal USB controller plugin for jailbroken PS4 consoles using GoldHEN.
 
 -----------------------------------------------------------------------------
 
-A small personal project I decided to share.
+ProCon started as a small personal project designed to use a Nintendo Switch Pro Controller directly via USB on a jailbroken PS4.
 
-ProCon allows you to use an original Nintendo Switch Pro Controller via USB in PS4 games using GoldHEN.
+Starting with **ProCon 0.2**, the project has been expanded into an experimental universal controller plugin, adding support for multiple USB controllers and generic HID gamepads.
 
-The plugin reads input directly from the Pro Controller over USB and combines it with the controller data received by the game, using the same player slot as the DualShock 4.
+The plugin reads controller input directly over USB and translates it into input that PS4 games can use, sharing the same player slot as the connected DualShock 4.
 
-This is an experimental project made primarily for personal use. Future updates and compatibility with every game or system version are not guaranteed.
+## What's New in ProCon 0.2
+
+ProCon 0.2 expands the original Nintendo Switch Pro Controller implementation with experimental support for:
+
+- Nintendo Switch Pro Controller
+- DualSense (PlayStation 5)
+- Xbox One controllers
+- Xbox Series controllers
+- Generic USB HID gamepads
+- Other compatible HID controllers
+
+### Important
+
+Support for controllers other than the Nintendo Switch Pro Controller is currently **experimental and unverified**.
+
+I do not own all of these controllers and therefore cannot personally test every implementation.
+
+The required support has been added to the plugin, but actual compatibility may vary depending on the controller model, USB implementation, firmware and game.
+
+If you own one of these controllers, feel free to test it and report whether it works, partially works, or causes any issues.
 
 ## Features
 
-- Nintendo Switch Pro Controller support via USB
+- Universal USB controller support
+- Nintendo Switch Pro Controller support
+- Experimental DualSense support
+- Experimental Xbox One / Xbox Series controller support
+- Experimental generic HID gamepad support
+- Controllers connect directly to the PS4 via USB
+- No PC or external controller adapter required
 - Works directly inside PS4 games through a GoldHEN plugin
-- Pro Controller input is combined with the DualShock 4 input for the same player
-- No additional adapter required
+- Controller input is translated and combined with the DualShock 4 input for the same player
 
 ## Requirements
 
 - Jailbroken PS4
 - GoldHEN
-- Original Nintendo Switch Pro Controller
+- Compatible USB controller
 - USB cable
 - DualShock 4
 
@@ -30,70 +55,120 @@ This is an experimental project made primarily for personal use. Future updates 
 
 1. Make sure your PS4 is jailbroken and running GoldHEN.
 2. Enable plugins in the GoldHEN settings.
-2. Download and install the ProCon PKG.
-3. Open the ProCon application.
-4. Press **OK** and wait for the **"Plugin installed successfully."** message.
-5. The application will crash.
-6. Connect the Pro Controller to the PS4 via USB.
-7. Launch a game.
-8. Keep the DualShock 4 powered on and connected to the PS4 while using ProCon.
+3. Download and install the ProCon PKG.
+4. Open the ProCon application.
+5. Press **OK** and wait for the **"Plugin installed successfully."** message.
+6. The application will close/crash after installation.
+7. Connect your controller to the PS4 via USB.
+8. Launch a game.
+9. Keep the DualShock 4 powered on and connected while using ProCon.
 
 ## Compatibility
 
-ProCon was tested on:
+ProCon was originally developed and tested using:
 
+- Nintendo Switch Pro Controller
 - PS4 firmware **13.50**
 - GoldHEN
 
-Compatibility with older firmware versions has not been verified.
+Starting with version 0.2, support for additional controllers has been implemented but has **not been fully tested on real hardware**.
 
-Game compatibility may vary. Since this is an experimental project, crashes or unexpected behavior may occur.
+Compatibility reports are welcome.
+
+If you test a controller, please report:
+
+- Controller name/model
+- PS4 firmware
+- GoldHEN version
+- Whether buttons work correctly
+- Whether analog sticks and triggers work correctly
+- Any crashes or unexpected behavior
+
+These reports will help determine which controllers are actually compatible with ProCon 0.2.
 
 ## Limitations
 
-Currently, ProCon does **not** support:
+ProCon 0.2 is still experimental.
+
+Depending on the controller, the following features may be unavailable or incomplete:
 
 - Bluetooth
 - Vibration / rumble
 - Gyroscope / motion controls
-- Touchpad gestures
-- PS button input from the Pro Controller
+- Touchpad functionality
+- PS/Home/Guide button functionality
+- Controller-specific features
 
-The DualShock 4 must remain connected while using the Pro Controller.
+The DualShock 4 must currently remain connected while using another controller.
 
-Disclaimer
+Generic HID compatibility is not guaranteed. HID gamepads can use different report formats, mappings and implementations even when they identify as standard USB HID devices.
 
-This project is experimental and provided as-is.
+## Disclaimer
 
-It was originally created for personal use and is being shared in case it is useful to others. There is no guarantee of future updates, support for additional features, or compatibility with every PS4 game, firmware version, or GoldHEN version.
+ProCon is an experimental homebrew project provided as-is.
 
------------------------------------------------------------------------------------
+Version 0.2 significantly expands the scope of the original project, but many of the newly supported controller types have not been tested by me because I do not have access to the required hardware.
 
-# ProCon
-Plugin homebrew para PS4 que permite usar um Nintendo Switch Pro Controller via USB em um PS4 modificado.
+Support being present in the plugin does **not** guarantee that every controller or model will work correctly.
+
+Testing is currently left to users who own compatible hardware.
+
+Bug reports, compatibility reports and technical feedback are welcome.
+
+There is no guarantee of future updates, additional features, or compatibility with every PS4 game, firmware, GoldHEN version or USB controller.
+
+ill post source later
+
+------------------------------------------------------------------------------
+
+Plugin universal para controles USB em consoles PS4 com jailbreak utilizando GoldHEN.
 
 -----------------------------------------------------------------------------
 
-Um pequeno projeto pessoal que resolvi compartilhar.
+O ProCon começou como um pequeno projeto pessoal criado para permitir o uso do Pro Controller do Nintendo Switch diretamente via USB em um PS4 com jailbreak.
 
-O ProCon permite usar um Nintendo Switch Pro Controller original via USB em jogos de PS4 utilizando o GoldHEN.
+A partir do **ProCon 0.2**, o projeto foi expandido para se tornar um plugin experimental de controles universais, adicionando suporte a diferentes controles USB e gamepads HID genéricos.
 
-O plugin lê diretamente os comandos do Pro Controller pela USB e os combina com os dados de controle recebidos pelo jogo, utilizando o mesmo jogador do DualShock 4.
+O plugin lê diretamente os comandos do controle através da USB e os traduz para comandos que os jogos de PS4 conseguem utilizar, compartilhando o mesmo jogador do DualShock 4 conectado.
 
-Este é um projeto experimental feito principalmente para uso pessoal. Futuras atualizações e compatibilidade com todos os jogos ou versões do sistema não são garantidas.
+## Novidades do ProCon 0.2
+
+O ProCon 0.2 expande a implementação original do Nintendo Switch Pro Controller com suporte experimental para:
+
+- Nintendo Switch Pro Controller
+- DualSense (PlayStation 5)
+- Controles Xbox One
+- Controles Xbox Series
+- Gamepads USB HID genéricos
+- Outros controles HID compatíveis
+
+### Importante
+
+O suporte aos controles além do Pro Controller é atualmente **experimental e não verificado**.
+
+Eu não tenho todos esses controles e não consigo testar pessoalmente todas as implementações.
+
+O suporte necessário foi adicionado ao plugin, porém a compatibilidade real pode variar dependendo do modelo do controle, implementação USB, firmware e jogo.
+
+Caso você possua um desses controles, fique à vontade para testá-lo e informar se funciona corretamente, parcialmente ou se apresenta algum problema.
 
 ## Recursos
 
-- Suporte ao Nintendo Switch Pro Controller via USB
-- Funciona diretamente dentro dos jogos de PS4 através de um plugin do GoldHEN
-- Os comandos do Pro Controller são combinados com os do DualShock 4 para o mesmo jogador
-- Não requer nenhum adaptador adicional
+- Suporte universal a controles USB
+- Suporte ao Nintendo Switch Pro Controller
+- Suporte experimental ao DualSense
+- Suporte experimental aos controles Xbox One / Xbox Series
+- Suporte experimental a gamepads HID genéricos
+- Controles conectados diretamente ao PS4 via USB
+- Não requer PC ou adaptador externo para controles
+- Funciona diretamente dentro dos jogos através de um plugin do GoldHEN
+- Os comandos são traduzidos e combinados com os comandos do DualShock 4 para o mesmo jogador
 
 ## Requisitos
 
 - PS4 com jailbreak
 - GoldHEN
-- Nintendo Switch Pro Controller original
+- Controle USB compatível
 - Cabo USB
 - DualShock 4
 
@@ -104,36 +179,61 @@ Este é um projeto experimental feito principalmente para uso pessoal. Futuras a
 3. Baixe e instale o PKG do ProCon.
 4. Abra o aplicativo ProCon.
 5. Pressione **OK** e aguarde a mensagem **"Plugin installed successfully."**
-6. O aplicativo irá crashar.
-7. Conecte o Pro Controller ao PS4 via USB.
+6. O aplicativo irá fechar/crashar após a instalação.
+7. Conecte seu controle ao PS4 através da USB.
 8. Abra um jogo.
-9. Mantenha o DualShock 4 ligado e conectado ao PS4 enquanto estiver usando o ProCon.
+9. Mantenha o DualShock 4 ligado e conectado enquanto estiver utilizando o ProCon.
 
 ## Compatibilidade
 
-O ProCon foi testado em:
+O ProCon foi originalmente desenvolvido e testado utilizando:
 
+- Nintendo Switch Pro Controller
 - PS4 firmware **13.50**
 - GoldHEN
 
-A compatibilidade com versões anteriores do firmware não foi verificada.
+A partir da versão 0.2, o suporte a controles adicionais foi implementado, porém **ainda não foi completamente testado em hardware real**.
 
-A compatibilidade pode variar dependendo do jogo. Como este é um projeto experimental, crashes ou comportamentos inesperados podem ocorrer.
+Relatórios de compatibilidade são bem-vindos.
+
+Caso teste algum controle, informe:
+
+- Nome/modelo do controle
+- Firmware do PS4
+- Versão do GoldHEN
+- Se os botões funcionam corretamente
+- Se os analógicos e gatilhos funcionam corretamente
+- Crashes ou outros comportamentos inesperados
+
+Esses relatos ajudarão a determinar quais controles realmente são compatíveis com o ProCon 0.2.
 
 ## Limitações
 
-Atualmente, o ProCon **não** oferece suporte a:
+O ProCon 0.2 ainda é experimental.
+
+Dependendo do controle, os seguintes recursos podem estar indisponíveis ou incompletos:
 
 - Bluetooth
 - Vibração
 - Giroscópio / controles de movimento
-- Gestos do touchpad
-- Botão PS através do Pro Controller
+- Funcionalidades do touchpad
+- Botão PS/Home/Guide
+- Recursos específicos de determinados controles
 
-O DualShock 4 deve permanecer conectado enquanto o Pro Controller estiver sendo utilizado.
+Atualmente, o DualShock 4 deve permanecer conectado enquanto outro controle estiver sendo utilizado.
+
+A compatibilidade com dispositivos HID genéricos não é garantida. Diferentes gamepads HID podem utilizar formatos de reports, mapeamentos e implementações diferentes mesmo quando são identificados como dispositivos USB HID padrão.
 
 ## Aviso
 
-Este projeto é experimental e fornecido no estado em que se encontra.
+O ProCon é um projeto homebrew experimental fornecido no estado em que se encontra.
 
-Ele foi originalmente criado para uso pessoal e está sendo compartilhado caso seja útil para outras pessoas. Não há garantia de futuras atualizações, suporte a recursos adicionais ou compatibilidade com todos os jogos de PS4, versões de firmware ou versões do GoldHEN.
+A versão 0.2 expande significativamente o escopo do projeto original, porém vários dos novos tipos de controle suportados não foram testados por mim por não possuir o hardware necessário.
+
+A presença do suporte no plugin **não garante que todos os controles ou modelos funcionarão corretamente**.
+
+Os testes desses controles ficam atualmente a critério dos usuários que possuem hardware compatível.
+
+Relatórios de bugs, compatibilidade e feedback técnico são bem-vindos.
+
+Não há garantia de futuras atualizações, recursos adicionais ou compatibilidade com todos os jogos de PS4, versões de firmware, versões do GoldHEN ou controles USB.
