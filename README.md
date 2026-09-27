@@ -158,7 +158,7 @@ Ele oferece suporte a diferentes controles, gamepads HID genéricos, mouses e te
 
 Os comandos dos dispositivos conectados são combinados com os dados do controle recebidos pelo jogo, utilizando o mesmo jogador do DualShock 4 conectado.
 
-**## Mouse & Keyboard Mapping
+## Mouse & Keyboard Mapping
 
 Talvez seja necessário desconectar e reconectar o teclado e o mouse enquanto estiver dentro do jogo caso um dos dois não funcione.
 
