@@ -13,6 +13,8 @@ Input from connected devices is combined with the controller data received by th
 
 ## Mouse & Keyboard Mapping
 
+You may need to disconnect and reconnect your keyboard and mouse while in-game if either one isn't working.
+
 | Mouse / Keyboard | PS4 Input |
 |------------------|-----------|
 | **WASD** | Left Analog Stick |
@@ -157,6 +159,8 @@ Ele oferece suporte a diferentes controles, gamepads HID genéricos, mouses e te
 Os comandos dos dispositivos conectados são combinados com os dados do controle recebidos pelo jogo, utilizando o mesmo jogador do DualShock 4 conectado.
 
 **## Mouse & Keyboard Mapping
+
+Talvez seja necessário desconectar e reconectar o teclado e o mouse enquanto estiver dentro do jogo caso um dos dois não funcione.
 
 | Mouse / Teclado | PS4 Input |
 |------------------|-----------|
