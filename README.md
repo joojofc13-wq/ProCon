@@ -146,7 +146,7 @@ There is no guarantee of future updates, additional features, or compatibility w
 
 # ProCon
 
-Plugin universal para dispositivos de entrada USB pra PS4 com jailbreak utilizando GoldHEN.
+Plugin universal para dispositivos de entrada USB pra PS4 com jailbreak utilizando GoldHEN. Para reportar erros chame @dirtyocean no discord.
 
 -----------------------------------------------------------------------------
 
