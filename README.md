@@ -11,6 +11,20 @@ It supports multiple controllers, generic HID gamepads, Keyboard and mouse by re
 
 Input from connected devices is combined with the controller data received by the game, using the same player slot as the connected DualShock 4.
 
+## Mouse & Keyboard Mapping
+
+| Mouse / Keyboard | PS4 Input |
+|------------------|-----------|
+| **WASD** | Left Analog Stick |
+| **Mouse Movement** | Right Analog Stick |
+| **Left Click** | R2 |
+| **Right Click** | L2 |
+| **Space** | X |
+| **E** | Square |
+| **Q** | Triangle |
+| **Ctrl** | Circle |
+| **Enter** | Options |
+
 ## Supported Devices
 
 ProCon includes support for:
@@ -141,6 +155,20 @@ O ProCon é um plugin homebrew experimental que permite utilizar diferentes disp
 Ele oferece suporte a diferentes controles, gamepads HID genéricos, mouses e teclados, lendo seus comandos diretamente através da USB e traduzindo-os para comandos de controle que os jogos de PS4 conseguem utilizar.
 
 Os comandos dos dispositivos conectados são combinados com os dados do controle recebidos pelo jogo, utilizando o mesmo jogador do DualShock 4 conectado.
+
+**## Mouse & Keyboard Mapping
+
+| Mouse / Teclado | PS4 Input |
+|------------------|-----------|
+| **WASD** | Left Analog Stick |
+| **Mouse Movement** | Right Analog Stick |
+| **Left Click** | R2 |
+| **Right Click** | L2 |
+| **Space** | X |
+| **E** | Square |
+| **Q** | Triangle |
+| **Ctrl** | Circle |
+| **Enter** | Options |**
 
 ## Dispositivos suportados
 
