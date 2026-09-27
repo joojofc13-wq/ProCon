@@ -237,3 +237,5 @@ Os testes desses controles ficam atualmente a critério dos usuários que possue
 Relatórios de bugs, compatibilidade e feedback técnico são bem-vindos.
 
 Não há garantia de futuras atualizações, recursos adicionais ou compatibilidade com todos os jogos de PS4, versões de firmware, versões do GoldHEN ou controles USB.
+
+vou postar a source daqui um tempo
