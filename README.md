@@ -9,6 +9,10 @@ ProCon is an experimental homebrew plugin that allows you to use different USB i
 
 It supports multiple controllers, generic HID gamepads, Keyboard and mouse by reading their input directly over USB and translating it into controller input that PS4 games can use.
 
+Some games are not supported yet because they change the controller handle during startup, while ProCon stays locked to the original one. This can prevent input from USB controllers, keyboards and mice from reaching the game. This behavior was observed in The Witcher 3;
+
+Some PS2 Classics may not work too cuz their emulator’s startup process prevent the plugin loader from initializing normally.
+
 Input from connected devices is combined with the controller data received by the game, using the same player slot as the connected DualShock 4.
 
 ## Mouse & Keyboard Mapping
