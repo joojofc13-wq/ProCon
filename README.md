@@ -1,7 +1,6 @@
 # ProCon
 
 Universal USB input plugin for jailbroken PS4 consoles using GoldHEN.
-to report errors @dirtyocean on discord
 
 -----------------------------------------------------------------------------
 
